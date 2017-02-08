@@ -20,24 +20,34 @@ public class MyPanelClass extends JPanel {
                         int y2 = getHeight() - myInsets.bottom - 1;
                         int width = x2 - x1;
                         int height = y2 - y1;
+                        int centerx = (width/2)-28;
+                        int centery = (height/2)-28;
+                        
  
                         //Paint the background
-                        g.setColor(Color.WHITE);
+                        g.setColor(Color.DARK_GRAY);
                         g.fillRect(x1, y1, width+1, height+1);
                         
-                        //Draw a border
-                        g.setColor(Color.MAGENTA);
-                        g.fillRect(x1+5, y1+5, width-10, height-10);
+//                        //Draw a border
+//                        g.setColor(Color.MAGENTA);
+//                        g.fillRect(x1+5, y1+5, width-10, height-10);
+//                        
+//                        //Draw a border
+//                        g.setColor(Color.BLACK);
+//                        g.fillRect(x1+10, y1+10, width-20, height-20);
+//                        
+//                        //Draw a border
+//                        g.setColor(Color.YELLOW);
+//                        g.drawRect(x1, y1, width, height);
+//                        
+//                        g.setColor(Color.WHITE);
+//                        g.drawLine(x1, y1, x2, y2);
+//                        
+//                        g.setColor(Color.ORANGE);
+//                        g.drawLine(x1, y2, x2, y1);
                         
-                        //Draw a border
-                        g.setColor(Color.BLACK);
-                        g.fillRect(x1+10, y1+10, width-20, height-20);
-                        
-                        //Draw a border
-                        g.setColor(Color.YELLOW);
-                        g.drawRect(x1, y1, width, height);
-                        
-                      
+                        g.setColor(Color.LIGHT_GRAY);
+                        g.fillOval(centerx, centery, 55, 55);
                         
                         
                        
